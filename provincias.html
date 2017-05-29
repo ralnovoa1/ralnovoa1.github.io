@@ -1,63 +1,123 @@
 <html>
-<title>Cajamarca_Provncias</title>
+<title>Cajamarca_Provincias</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
 <body>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img class="w3-image" src="img/cajamarca1.jpg" alt="Me" width="1500" height="600">
-  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">CAJAMARCA</h1>
-    <h5 class="w3-hide-large" style="white-space:nowrap">CAJAMARCA</h5>
-    <h3 class="w3-hide-medium w3-hide-small">Provincias</h3>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>CAJAMARCA<br>Provincias</b></h3>
   </div>
-  
-  <!-- Navbar (placed at the bottom of the header image) -->
-  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#historia" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Historia</a> 
+    <a href="#celendin" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Celendin</a> 
+    <a href="#chota" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chota</a> 
+    <a href="#jaen" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Jaen</a> 
+    <a href="#contumaza" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contumaza</a>
   </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
 </header>
 
-<!-- Navbar on small screens -->
-<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-<div class="w3-bar w3-light-grey">
-  <a href="#" class="w3-bar-item w3-button">Home</a>
-  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-</div>
-</div>
-<!-- Page content -->
-<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
- <h2>DESCRIPCION DE CAJAMARCA</h2>
-  <p>
-  Cajamarca, fundada como «San Antonio de Cajamarca», es la ciudad más importante de la sierra norte del Perú, capital de la provincia y del departamento de Cajamarca. Está situada a 2750 msnm en la margen este de la cadena oriental de la Cordillera de los Andes, en el valle interandino que forman los ríos Mashcon y Chonta. Es una ciudad en constante crecimiento poblacional, con la posibilidad de crear en el futuro un área metropolitana conformada por las ciudades de Cajamarca y Baños del Inca y la anexión de algunos pueblos y villas próximas al casco urbano.
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-La zona de Cajamarca ya había sido habitada en el pasado durante el imperio inca, donde ya se consideraba como un centro poblado importante. En 1532, se produjo en este lugar la captura del inca Atahualpa durante la conquista del Perú. En la época de la colonia mantuvo su categoría de villa hasta el 19 de diciembre de 1802, poco antes de la independencia cuando empezó a ser considerada ciudad y recibió su escudo de armas.
-
-Es conocida por su celebración del carnaval, así como su importante producción de lácteos. También es conocida como la Flor del Cumbe, por su cercanía al cerro y al complejo arqueológico de Cumbemayo, la ciudad está ubicada en el extremo oeste del valle homónimo.
-
-Según el Instituto Nacional de Estadística e Informática, Cajamarca es la decimotercera ciudad más poblada del Perú y albergaba en el 2014 una población de 228 775 habitantes.
-  </p>
-  <br>
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>CAJAMARCA - PERÚ</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Historia</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
   
-  <h2>HISTORIA</h2>
-  <p>
-  Hasta el momento, aún no se ha podido determinar exactamente cuándo llegaron los primeros seres humanos a Cajamarca. Probablemente, su arribo haya sido en un estado primitivo, pero gracias a su capacidad inventiva fueron capaces de organizar una gran cultura. Los restos encontrados en las cuevas del cerro Cumbe muestran la presencia de una cultura lítica muy diferente a las coexistentes en el Antiguo Perú y demuestran que su alimentación consistía en el consumo de venados y cuyes silvestres.
+  
 
-Respecto al arte rupestre en Cajamarca se destaca el sitio arqueológico de Callaq Puma (Huayrapongo o puerta del viento), que está ubicado en la vía que une los distritos de Baños del Inca y Llacanora. Las figuras representativas son las de animales y hombres, dibujadas a través de precisiones geométricas. El período formativo en Cajamarca tuvo diversas manifestaciones, las cuales engloban a la agricultura, la artesanía y una compleja organización política, económica y social.
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
 
-Por otro lado, posteriores estudios arqueológicos establecieron que Huacaloma, una antigua ciudadela preinca, data de 1500 años a.C. y su desarrollo histórico comprende tres fases: Huacaloma Temprano (1500 a. C. y 1000 a. C.), Huacaloma Tardío (1000 a. C. y 500 a. C.) y Layzón (500 y 200 a. C.).
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Celendin.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Chota.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
 
-Durante la conquista incaica por Pachacútec, el valle de Cajamarca y sus alrededores fueron anexados al Tahuantinsuyo, sin embargo, la urbe de Kaxa Marca ya había sido fundada por otras etnias casi un siglo antes de su incorporación al imperio, aproximadamente en el año 1320.
-  </p>
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Jaen.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contumaza.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    
+    
 
 <!-- End page content -->
 </div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 
 </body>
 </html>
