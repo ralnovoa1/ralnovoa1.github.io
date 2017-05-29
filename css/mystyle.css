@@ -28,4 +28,11 @@
 	font: bold 20px verdana, sans-serif;
 }
 
+#lateral {
+	float: left;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 20px;
+	background: #9ad19d;
+}
 
