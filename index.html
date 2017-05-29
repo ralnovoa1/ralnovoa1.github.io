@@ -16,11 +16,46 @@ body {font-family: "Roboto", sans-serif}
 
 <body>
 
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="img/rest.jpg" style="width:100%">
+  <img class="mySlides" src="img/rest1.jpg" style="width:100%">
+  <img class="mySlides" src="img/rest2.jpg" style="width:100%">
+  <img class="mySlides" src="img/rest3.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+
+<body>
+
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card-2" style="z-index:3;width:250px;" id="mySidebar">
   <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#"><img src="https://www.w3schools.com/images/w3schools.png" style="width:80%;"></a>
   <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
   <a class="w3-bar-item w3-button w3-light-grey" href="#">Principal</a>
-  <a class="w3-bar-item w3-button" href="#">Conocenos</a>
   <a class="w3-bar-item w3-button" href="#">Mision</a>
   <a class="w3-bar-item w3-button" href="#">Vision</a>
   <a class="w3-bar-item w3-button" href="#">Valores</a>
