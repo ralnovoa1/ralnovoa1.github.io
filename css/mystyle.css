@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+#envoltura{
+	width: 960px; /*ancho de pagina*/
+	margin: 15px auto; /*margenes 15px arriba y lo demas auto (0px)*/
+	text-align: left;
+}
+
+#cabecera{
+	background: #c6cef2;
+	border: 1px solid #999999;
+	padding: 20px;
+	text-align: center;
+	font: bold 36px verdadna, sans-serif;
+	text-shadow: rgb(150,150,150) 3px 3px 3px;
+	/*transform: scale(1, -1); --> para voltear el texto*/
+}
+
+#pie{
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid #999999;
+}
+
+.font-blue{
+	background:white;
+	font: bold 20px verdana, sans-serif;
+}
+
+
