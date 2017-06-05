@@ -40,3 +40,21 @@ body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+.socual-bar
+	posicion: fixed;
+	rigth: 0;
+	top: 35%;
+	font-size: 1,5rem;
+	display: flex;
+	flex-direction: colum:
+	align-items: flex-end;
+	z-index: 100;
+	
+.icons
+	color: white:
+	text-decoration: none;
+	padding: 7rem;
+	display: flex;
+	transition: all .5%;
