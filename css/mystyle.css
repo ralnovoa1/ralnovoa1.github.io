@@ -52,4 +52,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	align-items: flex-end;
 	z-index: 100;
 }
+
+.icon{
+	color:white;
+	text-decoration: none;
+	padding: 7rem;
+	display: flex;
+	transition: all .5%;
+}
+
+.icon-brand71{
+	background: #2E406E;
+}
+
+.icon-brand268{
+	background: #339DC5;
+}
 	
+.icon-brand115{
+	background: #3F60A5;
+}
