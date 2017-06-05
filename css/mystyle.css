@@ -42,7 +42,7 @@ body {font-size:16px;}
 .w3-half img:hover{opacity:1}
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-.socual-bar
+.socual-bar{
 	posicion: fixed;
 	rigth: 0;
 	top: 35%;
@@ -51,10 +51,5 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	flex-direction: colum:
 	align-items: flex-end;
 	z-index: 100;
+}
 	
-.icons
-	color: white:
-	text-decoration: none;
-	padding: 7rem;
-	display: flex;
-	transition: all .5%;
