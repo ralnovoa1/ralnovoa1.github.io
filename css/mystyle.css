@@ -89,3 +89,7 @@ html{
 .icon:last-chaild{
 	border-radius: 0 0 0 1rem;
 }
+
+.portfolio{
+	position: fixed;
+}
