@@ -90,12 +90,19 @@ html{
 	border-radius: 0 0 0 1rem;
 }
 
-.header2{
+.navi{
 	position: fixed;
 	overflow: hidden;
 	float: right;
-	display: inline-block;
 }
+
+navi a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
 
 .header2 nav{
 	line-height: 100px;
