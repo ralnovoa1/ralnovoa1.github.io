@@ -21,10 +21,9 @@
       <a class="navbar-brand" href="#">PROVINCIAS_CAJAMARCA</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="historia">Historia</a></li>
-      <li><a href="fotos">Fotos</a></li>
-      <li><a href="https://github.com/ralnovoa1/ralnovoa1.github.io">Repositorio</a></li>
+      <li class="active"><a href="#"><span class="icon-home"></span>Home</a></li>
+      <li><a href="fotos"><span class="icon-image"></span>Fotos</a></li>
+      <li><a href="https://github.com/ralnovoa1/ralnovoa1.github.io"><span class="icon-thunder-cloud"></span>Repositorio</a></li>
     </ul>
   </div>
 </nav>
@@ -39,7 +38,7 @@
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span class="icon-home"></span>Home</a> 
-    <a href="#historia" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Historia</a> 
+    <a href="#historia" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span class="icon-thunder-cloud"></span>Historia</a> 
     <a href="#celendin" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Celendin</a> 
     <a href="#chota" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chota</a> 
     <a href="#jaen" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Jaen</a> 
@@ -48,7 +47,7 @@
 </nav>
 
 <div class="social-bar">
-	<a  href="https://www.facebook.com/RalNovoa" class="icon icon-brand71" target="_blank"></a>
+	<a  href="https://www.facebook.com/RalNovoa" class="icon icon-facebook" target="_blank"></a>
 	<a  href="https://twitter.com/RalNovoa" class="icon icon-brand268" target="_blank"></a>
 	<a  href="https://www.instagram.com/ralnovoa/?hl=es" class="icon icon-brand115" target="_blank"></a>
 	<a  href="#" class="icon icon-brand297" target="_blank"></a>
@@ -86,6 +85,68 @@ Por otro lado, posteriores estudios arqueológicos establecieron que Huacaloma, 
 Durante la conquista incaica por Pachacútec, el valle de Cajamarca y sus alrededores fueron anexados al Tahuantinsuyo, sin embargo, la urbe de Kaxa Marca ya había sido fundada por otras etnias casi un siglo antes de su incorporación al imperio, aproximadamente en el año 1320.
     </p>
   </div>
+ 
+ <div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="img/plaza.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Plaza de Armas, Cajamarca
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/santa.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Santa Apolonia, Cajamarca
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/catedral.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    La catedral, cajamarca
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/francisco.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Iglesia San Francisco, Cajamarca
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/baños.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Baños del Inca, Cajamarca
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
   
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
