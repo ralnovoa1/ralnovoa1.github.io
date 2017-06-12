@@ -92,6 +92,9 @@ html{
 
 .header2{
 	position: fixed;
+	overflow: hidden;
+	float: right;
+	display: inline-block;
 }
 
 .header2 nav{
