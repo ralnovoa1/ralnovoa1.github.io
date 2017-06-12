@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="font.css">
 
 <body>
+<script src="js/new.js"></script>
 <header>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -128,26 +129,6 @@ Durante la conquista incaica por Pachacútec, el valle de Cajamarca y sus alrede
 <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
 
 </div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
   
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
