@@ -90,3 +90,11 @@ html{
 	border-radius: 0 0 0 1rem;
 }
 
+.header2{
+	position: fixed;
+	height:100px;
+}
+
+.header2 nav{
+	line-height: 100px;
+}
