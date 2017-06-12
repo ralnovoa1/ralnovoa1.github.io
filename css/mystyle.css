@@ -94,16 +94,9 @@ html{
 	position: fixed;
 	overflow: hidden;
 	float: right;
-}
-
-navi a{
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
 	padding: 10px 20px;
 }
 
-
-.header2 nav{
-	line-height: 100px;
-}
